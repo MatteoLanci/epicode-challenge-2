@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIFY</title>
+    <style>
+        @font-face {
+            font-family: 'musicnet';
+            src: url(fonts/MUSICNET.ttf);
+        }
+
+        @font-face {
+            font-family: 'janshine';
+            src: url(fonts/January\ Shine.ttf);
+        }
+
+        @font-face {
+            font-family: 'typo';
+            src: url(fonts/Typo\ Formal\ Regular\ Demo.otf);
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        button[type=submit]{
+            background-color: #F5F0BB;
+            color: black;
+            padding: 10px 20px 10px 20px;
+            border: 0px;
+            border-radius: 70;
+            cursor: pointer;
+            float: center;
+            width: 50%;
+            font-family: 'janshine';
+            font-size: 40px;
+        }
+
+        input[type=text], [type=email], [type=date], [type=number], [type=password], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+            resize: vertical;
+            background-color: #F5F0BB;
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        .row:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+        label{
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .col-25{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            margin-left: 13%;
+        }
+
+        .col-75{
+            float: left;
+            width: ;
+            margin-top: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit]{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        .container{
+            border: 0px solid #7ECA9C;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: transparent
+        }
+    </style>
+</head>
+<body style="text-align: center; margin-top: 2%; background-image: url(images/vynil-vector-bwcool2.jpg); background-position:top; color: #F5F0BB; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <div>
+        <header style="height: fit-content;">
+                <h1
+                    style="font-family: 'musicnet'; font-size: 80px; text-align: center; position: relative; margin: auto; margin-top: 2%;"> EPIFY
+                </h1>
+                <h2 style="font-family:'typo'; font-size: 35px;">
+                    Feel The Beat
+                </h2>
+                <h3 style="font-family: 'janshine'; font-size: 50px;">
+                    Join Our Community
+                </h3>
+        </header>
+    </div>
+    <div class="container">
+        <form action="" onsubmit="alert('Registrazione Inviata!')" style="font-family: 'typo';">
+                <div style="font-size: 20px;">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="nome">Il tuo nome:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cognome">Il tuo cognome:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="cognome" name="cognome" placeholder="Cognome" style="margin-top: 8px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Il tuo indirizzo email</label>
+                        </div>    
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="e-mail" style="margin-top: 8px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="password">Scegli una password:</label>
+                        </div>   
+                        <div class="col-75"> 
+                            <input type="password" id="password" name="password" style="margin-top: 8px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="B.O.D.">Quando sei nato?</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="B.O.D." name="B.O.D." style="margin-top: 8px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="number">Il tuo numero:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="number" name="number" placeholder="e.g. 329 696 3848" style="margin-top: 8px;">
+                        </div>
+                    </div>
+                    <!--FINE DATI ANAGRAFICI-->
+                    <div style="text-align: center; margin-top: 5%;"><span style="font-family: 'janshine'; font-size: 80px;">I tuoi generi musicali preferiti:</span><br>
+                        <p style="display: inline-block;">
+                            <div>
+                                <ul style="list-style-type: none; columns: 2; width:max-content; margin:auto; text-align: left; column-gap: 2.5cm; display: inline-block; min-width 400px;">
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Hip Hop</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Elettronica</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Rock</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Indie</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">R&B</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">K-pop</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Metal</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Soul</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Country</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Alternative</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Jazz</li>
+                                    <li style="margin-bottom:10px;"><input type="checkbox">Blues</li>
+                                </ul>
+                            </div>
+                        </p>
+                    </div> 
+                </div>   
+                <div style="width: 80%; text-align: center; margin: auto; font-size: 16px; margin-top: 15%; margin-bottom: 5%;">
+                    <div>
+                        <input type="radio">Si, desidero ricevere offerte speciali ed essere informato su promozioni e novità (facoltativo)
+                    </div>
+                    <p></p>
+                    <div>
+                        <input type="radio">Accetto ricevere materiale pubblicitario via email relativo a prodotti e servizi di terzi (facoltativo)
+                    </div>
+                    <p></p>
+                    <div>
+                        <input type="checkbox" required>EPIFY si avvale di servizi informativi volti ad aggiornare i propri utenti riguardo tutte le sue novità, confermando questa casella confermi di accettare le condizioni di <a target="_blank" href="https://smallbiztrends.com/2021/11/disclaimer-examples.html#:~:text=The%20information%20on%20this%20website,endorse%2C%20or%20assume%20liability%20for." style="color: #F5F0BB;">questo disclaimer.</a>
+                    </div>
+                    <p></p>
+                </div>
+            <button type="submit" style="border-radius: 10%;">Invia Registrazione</button>
+        </form>
+    </div>
+</body>
+</html>
